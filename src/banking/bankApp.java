@@ -5,14 +5,14 @@ public class bankApp {
     private int pin;
     private double balance;
 
-    // Constructor to initialize a new account
+   
     public bankApp(int accountNo, int pin, double balance) {
         this.accountNo = accountNo;
         this.pin = pin;
         this.balance = balance;
     }
 
-    // Getters
+  
     public int getAccNo() {
         return accountNo;
     }
@@ -25,7 +25,7 @@ public class bankApp {
         return balance;
     }
 
-    // New setters for the register function (optional)
+   
     public void setAccNo(int accNo) {
         this.accountNo = accNo;
     }
@@ -33,7 +33,7 @@ public class bankApp {
         this.pin = pin;
     }
     
-    // Core banking methods
+   
     public void deposit(double amount) {
         if (amount > 0) {
             this.balance += amount;
@@ -54,7 +54,7 @@ public class bankApp {
         }
     }
 
-    // Method to verify login credentials
+  
     public boolean verifyAccount(int accNo, int pin) {
         return (this.accountNo == accNo && this.pin == pin);
     }
